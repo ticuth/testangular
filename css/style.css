@@ -1,0 +1,75 @@
+@font-face {
+    font-family: regularFont;
+    src: url(MozTT-Regular.ttf);
+}
+
+@font-face {
+    font-family: lightFont;
+    src: url(MozTT-Light.ttf);
+}
+
+.logoapp {
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    height: 48px;
+    
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height:4px;
+}
+::-webkit-scrollbar-track {
+      background-color: #6c6c6c;
+}
+::-webkit-scrollbar-corner {
+      background-color: #6c6c6c;
+}
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: lightFont;
+    
+    margin: 0px;
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+body { 
+  background: url(../images/black.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    color: white;
+  
+}
+#scroller {
+    color: white;
+}
+
+
+body {
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;
+    margin: 0px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
