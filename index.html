@@ -5,6 +5,7 @@
         <title>GEM STORE</title>
         
         <link href="lib/tb/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="cordova.js"></script>
         <style>
             .ng-invalid.ng-dirty{
                 border-color: red;
@@ -16,6 +17,7 @@
     </head>
     <body>
         <div ng-controller="StoreController as store">
+            {{store.isReady}}
             <ul class="list-group">
             <li class="list-group-item" ng-repeat="product in store.products | orderBy: '-price'">
                 <div ng-hide="product.soldOut">

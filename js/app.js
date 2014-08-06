@@ -1,6 +1,11 @@
 /*global angular*/
 /*jslint browser:true*/
 /*jslint devel:true*/
+
+
+
+
+
 (function () {
     'use strict';
     var app, gems;
@@ -8,6 +13,11 @@
     app.controller('StoreController', ['$http', function ($http) {
         var store = this;
         //this.products = gems;
+        store.isReady = false;
+        document.addEventListener('deviceready', function () {
+            store.isReady = true;
+        }, false);
+        
         store.produts = [];
         $http.get('http://tic-uth.net/gflores/testservices/gemsjson.php').success(function (data) {
             store.products = data;
