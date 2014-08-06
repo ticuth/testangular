@@ -23,7 +23,7 @@
                     <p>{{product.description}}</p>
                     <p ng-show="product.images.length>0">
                         <span ng-repeat="image in product.images">
-                            <img ng-src="{{image.full}}">
+                            <img ng-src="{{image}}">
                         </span>
                     </p>
                     <button ng-show="product.canPurchase">Add to cart</button>
