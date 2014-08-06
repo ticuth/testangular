@@ -7,7 +7,6 @@
     <author email="tic@uthermosillo.edu.mx" href="http://www.tic-uth.net/moodle/">
         TIC Universidad Tecnologica de Hermosillo
     </author>
-    <preference name="orientation" value="portrait" />
     <icon src="icon.png"/>
     <content src="index.html" />
     <access origin="*" />
