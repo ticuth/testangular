@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="store">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>GEM STORE</title>
@@ -38,5 +38,11 @@
         <script src="ang/angular.js"></script>
         <script src="js/app.js"></script>
         <script src="js/products.js"></script>
+	<script>
+		document.addEventListener('deviceready',function (){
+			angular.bootsrap(document,['store']);
+		},false);
+		
+	</script>
     </body>
 </html>
